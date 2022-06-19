@@ -9,7 +9,7 @@ export class Modal extends Component {
 
   static propTypes = {
     onClose: PropTypes.func.isRequired,
-    children: PropTypes.object.isRequired,
+    children: PropTypes.node.isRequired,
   };
 
   componentDidMount() {

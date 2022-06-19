@@ -14,7 +14,9 @@ export const ImageGallery = ({ data, onClick }) => {
   return (
     <>
       <ul className="ImageGallery" onClick={imageClick}>
-        <ImageGalleryItem images={data} />
+        {data.map(data => (
+          <ImageGalleryItem images={data} />
+        ))}
       </ul>
     </>
   );

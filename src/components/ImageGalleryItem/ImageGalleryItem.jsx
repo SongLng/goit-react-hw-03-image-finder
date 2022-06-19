@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types';
 import '../styles.css';
 export const ImageGalleryItem = ({ images }) => {
-  return images.map(({ id, src, alt }) => {
-    return (
-      <li className="ImageGalleryItem" key={id}>
-        <img
-          className="ImageGalleryItem-image"
-          src={src}
-          alt={alt}
-          data-id={id}
-        />
-      </li>
-    );
-  });
+  return (
+    <li className="ImageGalleryItem" key={images.id}>
+      <img
+        className="ImageGalleryItem-image"
+        src={images.src}
+        alt={images.alt}
+        data-id={images.id}
+      />
+    </li>
+  );
 };
 
 ImageGalleryItem.propTypes = {

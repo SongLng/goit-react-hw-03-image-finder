@@ -38,7 +38,7 @@ export class Searchbar extends Component {
     }
 
     this.props.onSubmit(normalizeSearchQuery);
-    this.setState({ searchQuery: '' });
+    // this.setState({ searchQuery: '' });
   };
 
   render() {

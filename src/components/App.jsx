@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Oval } from 'react-loader-spinner';
 import { ToastContainer } from 'react-toastify';
-import { ServiceAPI } from '../components/service/API';
+import { ServiceAPI } from '../service/API';
 import { ImageGallery } from '../components/ImageGallery/ImageGallery';
 import { Searchbar } from '../components/Searchbar/Searchbar';
 import { Button } from '../components/Button/Button';
