@@ -15,7 +15,7 @@ export const ImageGallery = ({ data, onClick }) => {
     <>
       <ul className="ImageGallery" onClick={imageClick}>
         {data.map(data => (
-          <ImageGalleryItem images={data} />
+          <ImageGalleryItem images={data} key={data.id} />
         ))}
       </ul>
     </>
@@ -23,5 +23,9 @@ export const ImageGallery = ({ data, onClick }) => {
 };
 
 ImageGallery.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object.isRequired),
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
